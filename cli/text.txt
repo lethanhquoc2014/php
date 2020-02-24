@@ -1,0 +1,3 @@
+Nice succinct summary!
+It should still be noted that exec returns the last line of the output. If desired, you can optionally pass in an array as the second parameter to capture the complete output, and an integer as the third parameter to capture the return value of the shell command, which can be used for error checking.
+The biggest downside to shell_exec is that it returns null if the command fails OR if it doesn't produce any output, so its return value cannot reliably be used for error checking. – Sean the Bean Mar 16 '17 at 19:28 
