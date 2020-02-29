@@ -44,8 +44,8 @@ class GuessStasticsMessage
     }
 }
 
-$message = new GuessStasticsMessage();
-echo $message->makeMessage('dog', 4);
+$guessMessage = new GuessStasticsMessage();
+echo $guessMessage->makeMessage('dog', 4);
 echo "\n";
 
 
