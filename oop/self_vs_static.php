@@ -1,10 +1,11 @@
 <?php
-abstract class HouseholdObject
+class HouseholdObject
 {
     
     public static function create()
     {
-        return new static();
+        // return new self(); // return HouseholdObject
+        return new static(); // return the child class
     }
 }
 
