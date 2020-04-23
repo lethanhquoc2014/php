@@ -37,3 +37,21 @@ echo \Foo\Bar\FOO . PHP_EOL;
 \Foo\Bar\Subnamespace\Foo::staticMethod();
 echo \Foo\Bar\Subnamespace\FOO . PHP_EOL;
 
+// Result
+/*
+====Unqualified name====
+Foo\Bar\foo()
+Foo\Bar\Foo\staticMethod()
+2
+====Qualified name====
+Foo\Bar\Subnamespace\foo()
+Foo\Bar\Subnamespace\Foo\staticMethod()
+1
+====Full qualified name====
+Foo\Bar\foo()
+Foo\Bar\Foo\staticMethod()
+2
+Foo\Bar\Subnamespace\foo()
+Foo\Bar\Subnamespace\Foo\staticMethod()
+1
+*/
