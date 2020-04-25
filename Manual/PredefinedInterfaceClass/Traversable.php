@@ -1,0 +1,1 @@
+// this interface is used by Iterator and IteratorAggregate interface.

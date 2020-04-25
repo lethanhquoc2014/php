@@ -26,7 +26,6 @@ foreach (range(1, 10, 2) as $number) {
 }
 echo PHP_EOL;
 
-$start = microtime(true);
 echo 'Single digit odd numbers from xrange(): ';
 foreach (xrange(1, 10, 2) as $number) {
     echo $number . " ";
