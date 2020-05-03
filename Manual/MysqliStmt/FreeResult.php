@@ -1,0 +1,1 @@
+// Frees the result memory associated with the statement, which was allocated by mysqli_stmt_store_result().

@@ -1,0 +1,1 @@
+// Reads the next result from a multiple query
