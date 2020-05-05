@@ -1,6 +1,8 @@
 <?php
 require_once 'Database.php';
 
+$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
 $stmt = $pdo->prepare(
     "INSERT INTO `orders` (
         `orderNumber`,
@@ -29,6 +31,15 @@ $stmt->bindParam(':comments', $comments);
 $stmt->bindParam(':customerNumber', $customerNumber);
 
 $orderNumber = 10427;
+$orderDate = '2020-05-04';
+$requiredDate = '2020-05-10';
+$shippedDate = null;
+$status = 'In Process';
+$comments = null;
+$customerNumber = 119;
+$stmt->execute();
+
+$orderNumber = 10428;
 $orderDate = '2020-05-04';
 $requiredDate = '2020-05-10';
 $shippedDate = null;
