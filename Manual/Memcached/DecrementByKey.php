@@ -1,0 +1,2 @@
+<?php
+// similar decrement() function
