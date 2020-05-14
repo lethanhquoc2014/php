@@ -1,4 +1,4 @@
 <?php
 require_once 'Connect.php';
 
-var_dump($mc->getServerList());
+var_dump($mc->getStats());
