@@ -1,0 +1,1 @@
+//Memcached::touch — Set a new expiration on an item
