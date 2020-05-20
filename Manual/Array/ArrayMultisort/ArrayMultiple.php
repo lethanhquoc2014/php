@@ -7,7 +7,8 @@ array_multisort ( array &$array1 [, mixed $array1_sort_order = SORT_ASC [, mixed
 $array1 = array(10, 100, 100, 0);
 $array2 = array(1, 3, 2, 4);
 
-array_multisort($array1, $array2);
+// array_multisort($array1, $array2);
+array_multisort($array1, SORT_ASC, SORT_STRING, $array2, SORT_ASC, SORT_REGULAR);
 
 print_r($array1);
 print_r($array2);
